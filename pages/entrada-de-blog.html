@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Conjuro - CINEASTA</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style-entradaBlog-error404.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="shortcut icon" href="/assets/images/Logo rojo.png" />
+  </head>
+
+  <body>
+    <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+                NAVBAR SECTION
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+    <!-- <div id="INICIO"></div> -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: rgba(0, 0, 0, 0.45)"
+    >
+      <div class="container-md">
+        <a class="navbar-brand" href="/index.html"
+          ><img
+            src="/assets/images/Logo cineasta.png"
+            alt="logo cineastas"
+            height="25px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <button
+              id="BOTON-NAV"
+              type="button"
+              class="nav-link btn btn-outline-light"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Suscríbete
+            </button>
+            <a
+              id="BOTON-NAV"
+              class="nav-link btn btn-outline-light"
+              aria-current="page"
+              href="/pages/acerca-de-nosotros.html"
+              >Conócenos</a
+            >
+            <a
+              id="BOTON-NAV"
+              class="nav-link btn btn-outline-light"
+              aria-current="page"
+              href="/pages/contacto.html"
+              >Contáctanos</a
+            >
+            <a
+              id="BOTON-NAV"
+              class="nav-link btn btn-outline-light"
+              aria-current="page"
+              href="/pages/login.html"
+              >Inicia sesión</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+          VENTANA MODAL SUSCRIPCION
+      TAMBIEN EN EL NAVBAR, NO SEPARAR!!
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div
+          class="modal-content text-light border-dark"
+          style="background-color: rgba(0, 0, 0, 0.85)"
+        >
+          <div class="modal-header d-flex justify-content-center">
+            <h5 class="modal-title" id="exampleModalLabel">
+              ¡Suscríbete a CINEASTA!
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3" id="SUSCRIPCION">
+                ¡Recibirás una notificación cuando lancemos una nueva review y
+                serás el primero en enterarte de eventos, concursos, sorteos y
+                mucho más!
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Ingresa tu email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="nombre@ejemplo.com.ar"
+                />
+                <div id="emailHelp" class="form-text">
+                  No te preocupes, no compartiremos tu email con nadie.
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="BOTON-NAV"
+              type="button"
+              class="btn btn-outline-light"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+
+            <a
+              id="BOTON-NAV"
+              class="btn btn-outline-light"
+              aria-current="page"
+              href="/pages/error404.html"
+              >Suscribirme</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section id="posteo my-5">
+        <div class="container-lg mt-5">
+          <div class="row">
+            <div class="row pt-5">
+              <div class="col-lg-4 col-s mb-3">
+                <img
+                  src="/assets/images/entrada-blog/The Conjuring.jpg"
+                  class="img-thumbnail rounded mx-auto d-block"
+                  alt="Portada-Conjuro"
+                />
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <h1 class="text-white text-center pb-2 border-bottom">
+                  El Conjuro (2013)
+                </h1>
+                <p class="text-white">Duración: 112 minutos</p>
+                <p class="text-white">Dirección: James Wan</p>
+                <p class="text-white">
+                  Producción: Tony DeRosa-Grund, Peter Safran, Rob Cowan
+                </p>
+                <p class="text-white">
+                  Protagonistas: Patrick Wilson, Vera Farmiga, Ron Livingston,
+                  Lili Taylor
+                </p>
+                <p class="text-white">
+                  Sinopsis: Narra los encuentros sobrenaturales que vivió la
+                  familia Perron en su casa de Rhode Island a principios de los
+                  70. El matrimonio Warren, investigadores de renombre en el
+                  mundo de los fenómenos paranormales, acude a la llamada de
+                  esta familia aterrorizada por la presencia en su granja de un
+                  ser maligno.
+                </p>
+              </div>
+
+              <!-- Agregué los div containers necesarios para poner el texto de la crítica -->
+
+              <div class="col-lg-4 col-sm-6">
+                <h1 class="text-center text-light pb-2 border-bottom">
+                  Crítica 'CINEASTA'
+                </h1>
+                <div class="container d-flex justify-content-center">
+                  <h1 class="text-rating">2,0</h1>
+                </div>
+                <div class="container d-flex justify-content-center">
+                  <div class="rating">
+                    <span class="fas fa-star fa-2x checked"></span>
+                    <span class="fas fa-star fa-2x checked"></span>
+                    <span class="far fa-star fa-2x"></span>
+                    <span class="far fa-star fa-2x"></span>
+                    <span class="far fa-star fa-2x"></span>
+                  </div>
+                </div>
+                <div class="container d-flex justify-content-center">
+                  <h4 class="text-secondary mt-2">Mala</h4>
+                </div>
+                <p class="text-light text-center">
+                  El gusto del director malasio por los muñecos grotescos de
+                  mirada inanimada y maldad latente es notorio desde 'Saw' y,
+                  especialmente, 'Silencio desde el mal'. Ese elemento ha ido
+                  saltando de obra a obra, también a 'Expediente Warren: The
+                  Conjuring', donde se une a la recuperación de Patrick Wilson
+                  desde 'Insidious' para, junto a Vera Farmiga, dar vida a los
+                  Warren, investigadores paranormales como los que ya salían en
+                  la película anterior, otra vuelta de tuerca a las historias de
+                  casas encantadas. Con esa sensación de desbordamiento
+                  progresivo de elementos el cineasta está construyendo un
+                  universo poroso y reconocible, elegante y gamberro, con un
+                  gran futuro por delante. Esperemos 'Insidious: Chapter 2'
+                </p>
+              </div>
+            </div>
+            <div class="col my-5">
+              <!-- Agregué un div container flex para centrar el video -->
+
+              <div class="container p-2 d-flex justify-content-center">
+                <iframe
+                  class="mw-100"
+                  width="100%"
+                  height="450"
+                  src="https://www.youtube.com/embed/k10ETZ41q5o"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <h1 class="text-white mt-3">The Conjuring Trailer</h1>
+              <span class="text-white pb-2 border-bottom"
+                >32,027,303 vistas • 2 abr. 2013</span
+              >
+            </div>
+            <h1 class="text-center text-light shadow p-3 mb-5 rounded">
+              CRÍTICAS DE USUARIOS
+            </h1>
+            <div class="container d-flex mb-3">
+              <h3 class="text-light me-3">Ordenar por:</h3>
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle"
+                  href="/pages/error404-4.html"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Mejores Críticas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="/pages/error404-1.html"
+                      >Usuarios que han publicado más críticas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/error404-2.html"
+                      >Usuarios con más seguidores</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+              <div class="row">
+                <div class="col-4 align-items-center">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a
+                          class="page-link text-dark"
+                          href="/pages/error404-3.html"
+                          >Previous</a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link text-dark"
+                          href="/pages/error404-3.html"
+                          >1</a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link text-dark"
+                          href="/pages/error404-3.html"
+                          >2</a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link text-dark"
+                          href="/pages/error404-3.html"
+                          >3</a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link text-dark"
+                          href="/pages/error404-3.html"
+                          >Next</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 border-bottom border-light mb-2">
+                <div class="container d-sm-flex d-block">
+                  <div class="d-block">
+                    <a href="/pages/error404-2.html"
+                      ><img
+                        src="/assets/images/entrada-blog/usuario1.jpg"
+                        class="mx-3"
+                        alt="usuario1"
+                    /></a>
+                    <p class="text-light mx-3">1up Mario</p>
+                  </div>
+                  <div class="container">
+                    <div class="rating">
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                    </div>
+                    <p class="text-start text-light mt-3">
+                      El conjuro es la nave nodriza de todas las películas de
+                      terror. Discutiré con cualquiera que diga lo contrario.
+                      Excelente performance de parte de todos los departamentos:
+                      guión, direcciones, actuación, etc.
+                    </p>
+                    <div class="container d-flex p-0">
+                      <div class="container p-1 m-0" style="width: 70px">
+                        <a href="/pages/error404-1.html"
+                          ><i class="far fa-smile"></i></a
+                        ><span class="text-light ms-2">0</span>
+                      </div>
+                      <div class="container p-1 m-0" style="width: 70px">
+                        <a href="/pages/error404-2.html"
+                          ><i class="far fa-frown"></i></a
+                        ><span class="text-light ms-2">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 border-bottom border-light mb-2">
+                <div class="container d-sm-flex d-block">
+                  <div class="d-block">
+                    <a href="/pages/error404-3.html"
+                      ><img
+                        src="/assets/images/entrada-blog/usuario2.jpg"
+                        class="mx-3"
+                        alt="usuario1"
+                    /></a>
+                    <p class="text-light mx-3">José Gutierrez</p>
+                  </div>
+                  <div class="container">
+                    <div class="rating">
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="far fa-star fa-2x"></span>
+                      <span class="far fa-star fa-2x"></span>
+                      <span class="far fa-star fa-2x"></span>
+                    </div>
+                    <p class="text-light mt-3">
+                      Tenía una noche con mis papás fuera de casa para ver una
+                      película que ellos no me dejarían ver y elegí esta.
+                    </p>
+                    <p class="text-light">Grave error.</p>
+                    <p class="text-light">
+                      Esperaba algo que de verdad me de miedo.
+                    </p>
+                    <div class="container d-flex p-0">
+                      <div class="container p-1 m-0" style="width: 70px">
+                        <a href="/pages/error404-1.html"
+                          ><i class="far fa-smile"></i></a
+                        ><span class="text-light ms-2">0</span>
+                      </div>
+                      <div class="container p-1 m-0" style="width: 70px">
+                        <a href="/pages/error404-2.html"
+                          ><i class="far fa-frown"></i></a
+                        ><span class="text-light ms-2">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 border-bottom border-light mb-2">
+                <div class="container d-sm-flex d-block">
+                  <div class="d-block">
+                    <a href="/pages/error404-2.html"
+                      ><img
+                        src="/assets/images/entrada-blog/usuario3.jpg"
+                        class="mx-3"
+                        alt="usuario1"
+                    /></a>
+                    <p class="text-light mx-3">Don Gato</p>
+                  </div>
+                  <div class="container">
+                    <div class="rating">
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="far fa-star fa-2x"></span>
+                    </div>
+                    <p class="text-light mt-3">
+                      Cada vez que ves una película de terror que dice "Basado
+                      en una historia real", la película es dos veces más
+                      aterradora. No pude dormir por dos semanas. Aún así,
+                      disfruté cada minuto.
+                    </p>
+                    <div class="container d-flex p-0">
+                      <div class="container p-1 m-0" style="width: 70px">
+                        <a href="/pages/error404-1.html"
+                          ><i class="far fa-smile"></i></a
+                        ><span class="text-light ms-2">0</span>
+                      </div>
+                      <div class="container p-1 m-0" style="width: 70px">
+                        <a href="/pages/error404-2.html"
+                          ><i class="far fa-frown"></i></a
+                        ><span class="text-light ms-2">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 border-bottom border-light mb-2">
+                <div class="container d-sm-flex d-block">
+                  <div>
+                    <a href="/pages/error404-1.html"
+                      ><img
+                        src="/assets/images/entrada-blog/usuario4.jpg"
+                        class="mx-3"
+                        alt="usuario1"
+                    /></a>
+                    <p class="text-light mx-3">La Lady</p>
+                  </div>
+                  <div class="container">
+                    <div class="rating">
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="far fa-star fa-2x"></span>
+                    </div>
+                    <p class="text-light mt-3">
+                      He visto esta película dos veces y vine a ver qué escenas
+                      usaban en el tráiler.
+                    </p>
+                    <p class="text-light">
+                      Todavía salto ante la bruja saltando del armario y cuando
+                      Lorraine vio esa cara cuando movió la caja de música.
+                    </p>
+                    <div class="container d-flex p-0">
+                      <div class="container p-1 m-0" style="width: 70px">
+                        <a href="/pages/error404-1.html"
+                          ><i class="far fa-smile"></i></a
+                        ><span class="text-light ms-2">0</span>
+                      </div>
+                      <div class="container p-1 m-0" style="width: 70px">
+                        <a href="/pages/error404-2.html"
+                          ><i class="far fa-frown"></i></a
+                        ><span class="text-light ms-2">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 border-bottom border-light mb-2">
+                <div class="container d-sm-flex d-block">
+                  <div>
+                    <a href="/pages/error404-1.html"
+                      ><img
+                        src="/assets/images/entrada-blog/usuario5.jpg"
+                        class="mx-3"
+                        alt="usuario"
+                    /></a>
+                    <p class="text-light mx-3">Los Fantasmitas</p>
+                  </div>
+                  <div class="container">
+                    <div class="rating">
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                      <span class="fas fa-star fa-2x checked"></span>
+                    </div>
+                    <p class="text-light mt-3">
+                      Impresionante. La mejor película de su género.
+                    </p>
+                    <div class="container d-flex p-0">
+                      <div class="container p-1 m-0" style="width: 70px">
+                        <a href="/pages/error404-1.html"
+                          ><i class="far fa-smile"></i></a
+                        ><span class="text-light ms-2">0</span>
+                      </div>
+                      <div class="container p-1 m-0" style="width: 70px">
+                        <a href="/pages/error404-2.html"
+                          ><i class="far fa-frown"></i></a
+                        ><span class="text-light ms-2">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-lg d-block">
+              <div class="container-lg">
+                <div class="mb-3">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label text-light my-2"
+                    >No estás registrado, pero aún así puedes aportar tu
+                    comentario!</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Nombre y Apellido"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="exampleFormControlTextarea1"
+                    class="form-label text-light"
+                    >Crítica</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="Qué opinas?"
+                  ></textarea>
+                </div>
+                <div class="container p-0 pointerstar">
+                  <a class="fas fa-star fa-2x b1"></a>
+                  <a class="fas fa-star fa-2x b2"></a>
+                  <a class="fas fa-star fa-2x b3"></a>
+                  <a class="fas fa-star fa-2x b4"></a>
+                  <a class="fas fa-star fa-2x b5"></a>
+                </div>
+                <div class="col-auto mt-3 d-flex justify-content-end">
+                  <button type="submit" class="btn btn-outline-light mb-3 px-5">
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="container-lg">
+              <div class="row mb-3">
+                <div class="col-md-6 col-sm-12">
+                  <h3 class="text-center text-white my-3 pb-2 border-bottom">
+                    ESTRENOS MÁS ESPERADOS
+                  </h3>
+                  <div
+                    id="carouselExampleSlidesOnly"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="/assets/images/entrada-blog/Cruella.jpg"
+                          class="d-block w-100"
+                          alt="Cruella 2021"
+                          style="height: 720px"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="/assets/images/entrada-blog/BW.png"
+                          class="d-block w-100"
+                          alt="Black Widow"
+                          style="height: 720px"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="/assets/images/entrada-blog/Ruega.jpg"
+                          class="d-block w-100"
+                          alt="Ruega por Nosotros"
+                          style="height: 720px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 mw-100">
+                  <h3 class="text-center text-white my-3 pb-2 border-bottom">
+                    TAMBIEN TE PUEDE INTERESAR
+                  </h3>
+                  <div
+                    id="carouselExampleSlidesOnly"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href="/pages/error404-4.html"
+                          ><img
+                            src="/assets/images/entrada-blog/it.png"
+                            class="d-block w-100"
+                            alt="IT"
+                            style="height: 720px"
+                        /></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/pages/error404-3.html"
+                          ><img
+                            src="/assets/images/entrada-blog/saw.jpg"
+                            class="d-block w-100"
+                            alt="Saw Espiral"
+                            style="height: 720px"
+                        /></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/pages/error404-2.html"
+                          ><img
+                            src="/assets/images/entrada-blog/nun.jpg"
+                            class="d-block w-100"
+                            alt="The Nun"
+                            style="height: 720px"
+                        /></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/pages/error404-2.html"
+                          ><img
+                            src="/assets/images/entrada-blog/Insidious.jpg"
+                            class="d-block w-100"
+                            alt="Insidious"
+                            style="height: 720px"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-white" style="background-color: rgba(0, 0, 0, 0.45)">
+      <div class="container text-center py-3">
+        <nav class="row align-items-center">
+          <div class="col-md">
+            <div>¡Suíguenos en nuestras redes!</div>
+            <div>
+              <a
+                href="https://www.facebook.com/"
+                style="text-decoration: none"
+                target="_blank"
+                ><i class="fab fa-facebook-square"></i> Facebook</a
+              >
+            </div>
+            <div>
+              <a
+                href="https://twitter.com/"
+                style="text-decoration: none"
+                target="_blank"
+                ><i class="fab fa-twitter-square"></i> Twitter</a
+              >
+            </div>
+            <div>
+              <a
+                href="https://www.instagram.com/"
+                style="text-decoration: none"
+                target="_blank"
+                ><i class="fab fa-instagram"></i> Instagram</a
+              >
+            </div>
+          </div>
+          <div class="col-md d-none d-md-block">
+            <a href="/index.html"
+              ><img
+                src="/assets/images/Logo series y pel.png"
+                alt="logo cineastas"
+                height="50px"
+            /></a>
+          </div>
+          <div class="col-md d-none d-lg-block">
+            <div>¡También visítanos</div>
+            <div>en nuestro canal!</div>
+            <div>Nuevo video todos los martes.</div>
+            <div>
+              <a
+                href="https://www.youtube.com/"
+                style="text-decoration: none"
+                target="_blank"
+                ><i class="fab fa-youtube"></i> YouTube</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Películas - CINEASTA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/style-galerias-contacto.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="shortcut icon" href="/assets/images/Logo rojo.png" />
+</head>
+
+<body>
+  <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+                NAVBAR SECTION
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+  <!-- <div id="INICIO"></div> -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.45)">
+    <div class="container-md">
+      <a class="navbar-brand" href="/index.html"><img src="/assets/images/Logo cineasta.png" alt="logo cineastas"
+          height="25px" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <button id="BOTON-NAV" type="button" class="nav-link btn btn-outline-light" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Suscríbete
+          </button>
+          <a id="BOTON-NAV" class="nav-link btn btn-outline-light" aria-current="page"
+            href="/pages/acerca-de-nosotros.html">Conócenos</a>
+          <a id="BOTON-NAV" class="nav-link btn btn-outline-light" aria-current="page"
+            href="/pages/contacto.html">Contáctanos</a>
+          <a id="BOTON-NAV" class="nav-link btn btn-outline-light" aria-current="page" href="/pages/login.html">Inicia
+            sesión</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+          VENTANA MODAL SUSCRIPCION
+      TAMBIEN EN EL NAVBAR, NO SEPARAR!!
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content text-light border-dark" style="background-color: rgba(0, 0, 0, 0.85);">
+        <div class="modal-header d-flex justify-content-center">
+          <h5 class="modal-title" id="exampleModalLabel">
+            ¡Suscríbete a CINEASTA!
+          </h5>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3" id="SUSCRIPCION">
+              ¡Recibirás una notificación cuando lancemos una nueva review y
+              serás el primero en enterarte de eventos, concursos, sorteos y
+              mucho más!
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Ingresa tu email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="nombre@ejemplo.com.ar" />
+              <div id="emailHelp" class="form-text">
+                No te preocupes, no compartiremos tu email con nadie.
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="BOTON-NAV" type="button" class="btn btn-outline-light" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+
+          <a id="BOTON-NAV" class="btn btn-outline-light" aria-current="page"
+            href="/pages/error404.html">Suscribirme</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+              MAIN SECTION
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+  <main class="container">
+
+    <div class="d-flex justify-content-center container">
+      <div class="btn-group dropdown-margin dropstart">
+        <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split bg-drop"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropright</span>
+        </button>
+        <ul class="dropdown-menu bg-drop">
+          <li><a class="dropdown-item text-light c-li" href="#c-ficcion">Ciencia Ficción</a></li>
+          <li><a class="dropdown-item text-light c-li" href="#comedias">Comedia</a></li>
+          <li><a class="dropdown-item text-light c-li" href="#terror">Terror</a></li>
+          <li><a class="dropdown-item text-light c-li" href="/pages/error404-2.html">Crimen</a></li>
+          <li><a class="dropdown-item text-light c-li" href="/pages/error404-3.html">Acción</a></li>
+          <li><a class="dropdown-item text-light c-li" href="/pages/error404-4.html">Romance</a></li>
+        </ul>
+        <a class="btn btn-secondary btn-sm bg-drop" href="" role="button">
+          Películas
+        </a>
+      </div>
+  
+      <div class="btn-group dropdown-margin dropend">
+        <a class="btn btn-secondary btn-sm bg-drop " href="/pages/galeria2.html" role="button">
+          Series
+        </a>
+        <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split bg-drop "
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu bg-drop">
+          <li><a class="dropdown-item text-light c-li" href="/pages/galeria2.html#crimen">Crimen</a></li>
+          <li><a class="dropdown-item text-light c-li" href="/pages/galeria2.html#accion">Accion-Violencia</a></li>
+          <li><a class="dropdown-item text-light c-li" href="/pages/galeria2.html#adolescentes">Adolescentes</a></li>
+          <li><a class="dropdown-item text-light c-li" href="/pages/galeria2.html#heroes">Héroes</a></li>
+          <li><a class="dropdown-item text-light c-li" href="/pages/galeria2.html#fantasia">Ficción-Fantasía</a></li>
+          <li><a class="dropdown-item text-light c-li" href="/pages/galeria2.html#suspenso">Suspenso</a></li>
+          <li><a class="dropdown-item text-light c-li" href="/pages/error404-3.html">Terror</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+      ._._._._._._._._._._._._._._._._._._._.
+       
+                MODAL vid SECTION
+       
+      .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+      ._._._._._._._._._._._._._._._._._. -->
+  
+    <div class="modal fade" id="Modal-avenger" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-light" style="background-color: rgba(0, 0, 0, 0.85);">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel">Ver tráiler</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center">
+            <iframe width="900" height="300" src="https://www.youtube.com/embed/PyakRSni-c0" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn btn-outline-light"
+              data-bs-dismiss="modal">Cerrar</button></div>
+        </div>
+      </div>
+    </div>
+  
+      <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+      ._._._._._._._._._._._._._._._._._._._.
+       
+                CARDS SECTION
+       
+      .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+      ._._._._._._._._._._._._._._._._._. -->
+    
+    <h1 class="text-light">PELICULAS</h1>
+
+    <br>
+    
+    <div id="c-ficcion">
+      <h1 class="display-5">Ciencia Ficción</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        
+          <div class="card border-0 shadow h-card">
+            <a type="button" data-bs-toggle="modal" class="text-decoration-none text-dark" data-bs-target="#Modal-avenger"> <img src="/assets/images/galeria/Ciencia Ficcion/avengers.jpg" class="card-img-top w-100" alt="avengers"></a>
+            <a class="text-decoration-none text-dark" href="/pages/entrada-de-blog-3.html"><div class="card-body">
+              <h5 class="card-title">Los Vengadores</h5>
+              <p class="card-text">En el final épico de la Saga del Infinito. Los Avengers luchan contra Thanos para restaurar el orden y la armonía en el universo y traer de vuelta a sus seres queridos.</p>
+            </div></a>
+            
+          </div>
+        
+      </div>
+
+
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Ciencia Ficcion/Matrix.jpg" class="card-img-top w-100" alt="matrix">
+          <div class="card-body">
+            <h5 class="card-title">Matrix</h5>
+            <p class="card-text">Un programador de computación descubre que el mundo que percibimos es una simulación
+            creada por máquinas, por lo que decide unirse a la lucha por la liberación humana.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Ciencia Ficcion/Avatar.jpg" class="card-img-top w-100" alt="Avatar">
+          <div class="card-body">
+            <h5 class="card-title">Avatar</h5>
+            <p class="card-text">En el planeta Pandora viven los Na'vi. Los Avatares se conectan con las mentes humanas.
+              Jake un exinfante paralítico se transforma en un Avatar, y se enamora de una mujer Na'vi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Ciencia Ficcion/StarWars.jpg" class="card-img-top w-100" alt="StarWars">
+          <div class="card-body">
+            <h5 class="card-title">StarWars</h5>
+            <p class="card-text">La Resistencia sobreviviente se enfrenta a la Primera Orden, Rey, Finn, Poe y el resto
+              de los héroes encararán nuevos retos y una batalla final con la sabiduría de las generaciones anteriores.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card ">
+          <img src="/assets/images/galeria/Ciencia Ficcion/Aquaman.jpg" class="card-img-top w-100" alt="aquaman">
+          <div class="card-body">
+            <h5 class="card-title">Aquaman</h5>
+            <p class="card-text">Aquaman debe recuperar el legendario Tridente de Atlan para salvar a la ciudad
+              subacuática de Atlantis, y al mundo de la superficie, de su hermano hambriento de poder.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Ciencia Ficcion/men_in_black.jpg" class="card-img-top w-100"
+            alt="Hombres de negro">
+          <div class="card-body">
+            <h5 class="card-title">Hombres de negro</h5>
+            <p class="card-text">Los hombres de negro son agentes secretos del Gobierno. Su misión consiste en controlar
+              a los alienígenas. K y J descubren un terrorista galáctico que pretende acabar con la Tierra.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/Ciencia Ficcion/transformers.jpg" class="card-img-top w-100"
+              alt="transformers">
+            <div class="card-body">
+              <h5 class="card-title">Transformers</h5>
+              <p class="card-text">La guerra entre los Transformers y los humanos amenaza a la Tierra. Con Optimus Prime
+                muy lejos, el planeta depende de Cade, Bumblebee, un lord inglés y un profesor de Oxford.</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Ciencia Ficcion/deadpool.jpg" class="card-img-top w-100" alt="Deadpool">
+          <div class="card-body">
+            <h5 class="card-title">Deadpool</h5>
+            <p class="card-text">Un exmercenario, tras haber sido sometido a un cruel experimento, adquiere el
+              superpoder de sanar rápidamente y pretende vengarse del hombre que destrozó su vida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="comedias">
+      <h1 class="display-5">Comedias</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Comedias/Ted.jpg" class="card-img-top w-100" alt="Ted">
+          <div class="card-body">
+            <h5 class="card-title">Ted</h5>
+            <p class="card-text">La boda de John Bennett enfrenta un pequeño obstáculo: la inmadurez de ted, un osito de
+              peluche desenfrenado y bocón que lo acompaña desde la infancia. Está vivo, sí.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Comedias/Nochedejuegos.jpg" class="card-img-top w-100" alt="Noche de juegos">
+          <div class="card-body">
+            <h5 class="card-title">Noche de juegos</h5>
+            <p class="card-text">Un grupo de amigos que se reúne una vez a la semana para jugar, deciden resolver un
+              falso asesinato,a medida que la partida avanza, se dan cuenta de que lo que está ocurriendo es real.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Comedias/ridiculos6.jpg" class="card-img-top w-100" alt="Ridiculos 6">
+          <div class="card-body">
+            <h5 class="card-title">Ridículos 6</h5>
+            <p class="card-text">Cuando secuestran a su padre, Tommy "Cuchillo Blanco" Stockburn se aventura por el
+              Oeste en una misión de rescate con sus cinco hermanos que acaba de conocer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Comedias/superbad.jpg" class="card-img-top w-100" alt="Super Cool">
+          <div class="card-body">
+            <h5 class="card-title">Super Cool</h5>
+            <p class="card-text">Con la esperanza de tener sexo antes de la universidad, Seth y Evan intentan comprar
+              alcohol para un fiestón, lo que desencadena una alocada serie de desventuras.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Comedias/paulblart.jpg" class="card-img-top w-100"
+            alt="Heroe del centro comercial">
+          <div class="card-body">
+            <h5 class="card-title">Mall Cop</h5>
+            <p class="card-text">Paul Blart lleva a su hija adolescente con él a Las Vegas a una exposición de guardias
+              de seguridad. Mientras están ahí, él se enfrenta a un robo y tiene que detener a los criminales.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Comedias/toc-toc.jpg" class="card-img-top w-100" alt="Toc toc">
+          <div class="card-body">
+            <h5 class="card-title">Toc toc</h5>
+            <p class="card-text">Unos pacientes con Trastorno Obsesivo Compulsivo coinciden en la consulta de un
+              psicólogo. El médico se retrasa, por lo que tendrán que esperar intentando mantener a raya sus obsesiones.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Comedias/gameover.jpg" class="card-img-top w-100" alt="Game over man">
+          <div class="card-body">
+            <h5 class="card-title">Game over man</h5>
+            <p class="card-text">Tres amigos holgazanes que sueñan en grande se convierten en comandos letales cuando un
+              grupo terrorista toma rehenes en una fiesta llena de estrellas en el hotel lujoso donde trabajan.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Comedias/zohan.jpg" class="card-img-top w-100" alt="No te metas con zohan">
+          <div class="card-body">
+            <h5 class="card-title">Zohan</h5>
+            <p class="card-text">Zohan, un soldado antiterrorista, tiene una fabulosa y secreta ambición: mudarse a
+              Manhattan para convertirse en peluquero. Y hará lo que se para alcanzar su sueño.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="terror">
+      <h1 class="display-5">Terror</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Terror/ElConjuro.jpg" class="card-img-top w-100" alt="ElConjuro">
+          <a class="text-decoration-none text-dark" href="/pages/entrada-de-blog.html"><div class="card-body">
+            <h5 class="card-title">El Conjuro</h5>
+            <p class="card-text">Ed y Lorrain, investigadores de fenómenos paranormales, se enfrentan a un demonio para
+              ayudar a una familia que está siendo aterrorizada por una presencia oscura en su granja.</p>
+          </div>
+          </a>
+          
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Terror/Annabelle.jpg" class="card-img-top w-100" alt="Annabelle">
+          <div class="card-body">
+            <h5 class="card-title">Annabelle</h5>
+            <p class="card-text">John consigue el regalo perfecto para su esposa embarazada: una muñeca antigua. Una
+              noche, una secta satánica los ataca y provocan que un ente maligno se apodere de Annabelle.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Terror/Nochedeldemonio.jpg" class="card-img-top w-100" alt="Nochedeldemonio">
+          <div class="card-body">
+            <h5 class="card-title">Noche del demonio</h5>
+            <p class="card-text">La historia trata de una pareja cuyo hijo sin explicacion entra en estado de coma y se
+              convierte en un recipiente para fantasmas en una dimensión astral que quiere habitar su cuerpo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Terror/Monja.jpg" class="card-img-top w-100" alt="Monja">
+          <div class="card-body">
+            <h5 class="card-title">La Monja</h5>
+            <p class="card-text">Una monja se suicida y el Vaticano envía a un sacerdote a investigar lo sucedido. Lo
+              que encuentra es un secreto perverso que los enfrentará con el mal en su esencia más pura.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Terror/it.jpg" class="card-img-top w-100" alt="It">
+          <div class="card-body">
+            <h5 class="card-title">It</h5>
+            <p class="card-text">Varios niños se alían para combatir a una entidad diabólica en forma de payaso y desde
+              hace mucho tiempo emerge cada 27 años para saciarse de sangre infantil.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Terror/Mama1.jpg" class="card-img-top w-100" alt="Mama">
+          <div class="card-body">
+            <h5 class="card-title">Mama</h5>
+            <p class="card-text">Tras la muerte de sus padres, Lilly y Victoria desaparecen en el bosque. Su tío las
+              encuentran cinco años despues en una cabaña. Luego descubre que hay algo que todavía las quiere conservar
+              en la oscuridad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Terror/deathnote.jpg" class="card-img-top w-100" alt="Death note">
+          <div class="card-body">
+            <h5 class="card-title">Death note</h5>
+            <p class="card-text">Cuenta la historia de un estudiante que encuentra un cuaderno de notas que pertenece a
+              un dios de la muerte que responde al nombre de Ryuk. El poder de este cuaderno permite matar a los demas.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/Terror/saw.jpg" class="card-img-top w-100" alt="Juego de miedo">
+          <div class="card-body">
+            <h5 class="card-title">Juego de miedo</h5>
+            <p class="card-text">Adam y Lawrence se despiertan encadenados en un baño infecto con un cadáver entre
+              ellos. Su secuestrador es un maniaco, cuyo juego consiste en forzar a sus cautivos a herirse a sí mismos o
+              a otros para permanecer vivos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+              FOOTER SECTION
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+  <footer class="text-white" style="background-color: rgba(0, 0, 0, 0.45)">
+    <div class="container text-center py-3">
+      <nav class="row align-items-center">
+        <div class="col-md">
+          <div>¡Suíguenos en nuestras redes!</div>
+          <div>
+            <a href="https://www.facebook.com/" style="text-decoration: none" target="_blank"><i
+                class="fab fa-facebook-square"></i> Facebook</a>
+          </div>
+          <div>
+            <a href="https://twitter.com/" style="text-decoration: none" target="_blank"><i
+                class="fab fa-twitter-square"></i> Twitter</a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/" style="text-decoration: none" target="_blank"><i
+                class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+        <div class="col-md d-none d-md-block">
+          <a href="/index.html"><img src="/assets/images/Logo series y pel.png" alt="logo cineastas"
+              height="50px" /></a>
+        </div>
+        <div class="col-md d-none d-lg-block">
+          <div>¡También visítanos</div>
+          <div>en nuestro canal!</div>
+          <div>Nuevo video todos los martes.</div>
+          <div>
+            <a href="https://www.youtube.com/" style="text-decoration: none" target="_blank"><i
+                class="fab fa-youtube"></i> YouTube</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

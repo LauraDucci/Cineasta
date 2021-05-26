@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Series - CINEASTA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/style-galerias-contacto.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="shortcut icon" href="/assets/images/Logo rojo.png" />
+</head>
+
+<body>
+  <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+                NAVBAR SECTION
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+  <!-- <div id="INICIO"></div> -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.45)">
+    <div class="container-md">
+      <a class="navbar-brand" href="/index.html"><img src="/assets/images/Logo cineasta.png" alt="logo cineastas"
+          height="25px" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <button id="BOTON-NAV" type="button" class="nav-link btn btn-outline-light" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Suscríbete
+          </button>
+          <a id="BOTON-NAV" class="nav-link btn btn-outline-light" aria-current="page"
+            href="/pages/acerca-de-nosotros.html">Conócenos</a>
+          <a id="BOTON-NAV" class="nav-link btn btn-outline-light" aria-current="page"
+            href="/pages/contacto.html">Contáctanos</a>
+          <a id="BOTON-NAV" class="nav-link btn btn-outline-light" aria-current="page" href="/pages/login.html">Inicia
+            sesión</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+          VENTANA MODAL SUSCRIPCION
+      TAMBIEN EN EL NAVBAR, NO SEPARAR!!
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content text-light border-dark" style="background-color: rgba(0, 0, 0, 0.85);">
+        <div class="modal-header d-flex justify-content-center">
+          <h5 class="modal-title" id="exampleModalLabel">
+            ¡Suscríbete a CINEASTA!
+          </h5>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3" id="SUSCRIPCION">
+              ¡Recibirás una notificación cuando lancemos una nueva review y
+              serás el primero en enterarte de eventos, concursos, sorteos y
+              mucho más!
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Ingresa tu email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="nombre@ejemplo.com.ar" />
+              <div id="emailHelp" class="form-text">
+                No te preocupes, no compartiremos tu email con nadie.
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="BOTON-NAV" type="button" class="btn btn-outline-light" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+
+          <a id="BOTON-NAV" class="btn btn-outline-light" aria-current="page"
+            href="/pages/error404.html">Suscribirme</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+              MAIN SECTION
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+
+  <main class="container">
+
+    <div class="d-flex justify-content-center container">
+        <div class="btn-group dropdown-margin dropstart">
+          <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split bg-drop"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropright</span>
+          </button>
+          <ul class="dropdown-menu bg-drop">
+            <li><a class="dropdown-item text-light c-li" href="/pages/galeria.html#c-ficcion">Ciencia Ficción</a></li>
+            <li><a class="dropdown-item text-light c-li" href="/pages/galeria.html#comedias">Comedias</a></li>
+            <li><a class="dropdown-item text-light c-li" href="/pages/galeria.html#terror">Terror</a></li>
+            <li><a class="dropdown-item text-light c-li" href="/pages/error404-3.html">Crimen</a></li>
+            <li><a class="dropdown-item text-light c-li" href="/pages/error404-4.html">Acción</a></li>
+            <li><a class="dropdown-item text-light c-li" href="/pages/error404-1.html">Romance</a></li>
+          </ul>
+          <a class="btn btn-secondary btn-sm bg-drop" href="/pages/galeria.html" role="button">
+            Películas
+          </a>
+        </div>
+    
+        <div class="btn-group dropdown-margin dropend">
+          <a class="btn btn-secondary btn-sm bg-drop " href="" role="button">
+            Series
+          </a>
+          <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split bg-drop "
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu bg-drop">
+            <li><a class="dropdown-item text-light c-li" href="#crimen">Crimen</a></li>
+            <li><a class="dropdown-item text-light c-li" href="#accion">Acción-Violencia</a></li>
+            <li><a class="dropdown-item text-light c-li" href="#adolescentes">Adolescentes</a></li>
+            <li><a class="dropdown-item text-light c-li" href="#heroes">Héroes</a></li>
+            <li><a class="dropdown-item text-light c-li" href="#fantasia">Ficción-Fantasía</a></li>
+            <li><a class="dropdown-item text-light c-li" href="#suspenso">Suspenso</a></li>
+            <li><a class="dropdown-item text-light c-li" href="/pages/error404-3.html">Terror</a></li>
+          </ul>
+        </div>
+      </div>
+
+    <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+              MODAL vid SECTION
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+    <h1 class="text-light">SERIES</h1>
+
+    <br>
+
+    <div class="modal fade" id="Modal-papel" tabindex="-1" aria-labelledby="ModalLabelp" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-light" style="background-color: rgba(0, 0, 0, 0.85);">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabelp">Ver tráiler</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center">
+            <iframe width="900" height="300" src="https://www.youtube.com/embed/To_kVMMu-Ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+              CARDS SECTION
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+      <div id="crimen">
+        <h1 class="display-5">Crimen</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+           <a type="button" class="text-decoration-none text-dark h-card" data-bs-toggle="modal" data-bs-target="#Modal-papel"> <img src="/assets/images/galeria/crimen/casapapel.jpg" class="card-img-top w-100" alt="Casa de papel"></a>
+            <div class="card-body">
+              <h5 class="card-title">Casa de papel</h5>
+              <p class="card-text">Ocho ladrones toman rehenes en la Fábrica Nacional de Moneda y Timbre de España, mientras el líder de la banda manipula a la policía para cumplir con su plan.</p>
+            </div>
+          </div> 
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/crimen/lupin.jpg" class="card-img-top w-100" alt="Lupin">
+            <div class="card-body">
+              <h5 class="card-title">Lupin</h5>
+              <p class="card-text">Inspirado en las aventuras de Arsene Lupin, el caballeroso ladrón Assane Diop se propone vengar a su padre de las injusticias sufridas a manos de una familia adinerada.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/crimen/peaky.jpg" class="card-img-top w-100" alt="Peaky Blinders">
+            <div class="card-body">
+              <h5 class="card-title">Peaky Blinders</h5>
+              <p class="card-text">1919. Inglaterra. Thomas Sheilby lidera una conocida banda de Brimingham que avanza con ferocidad por el bajo mundo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/crimen/narcoss.jpg" class="card-img-top w-100" alt="Narcos">
+            <div class="card-body">
+              <h5 class="card-title">Narcos</h5>
+              <p class="card-text">La verdadera historia de los poderosos y violentos cárteles de droga colombianos es el marco de esta serie dramática sobre el narco.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div id="accion">
+      <h1 class="display-5">Acción y Violencia</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/accion/vinkin2.jpg" class="card-img-top w-100" alt="Vikingos">
+          <div class="card-body">
+            <h5 class="card-title">Vikingos</h5>
+            <p class="card-text">Este drama realista recuenta las hazañas del vikingo Ragnar Lothbrok durante la expansion nórdica al retar a un lider falto de visíon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/accion/Barbaros.jpg" class="card-img-top w-100" alt="Barbaros">
+          <div class="card-body">
+            <h5 class="card-title">Barbaros</h5>
+            <p class="card-text">Las lealtades opuestas de un oficial romano, dividido entre el poderoso imperio que lo vio crecer y su propia tribu, conducen a una épica batalla histórica.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/accion/lastkingdom.jpg" class="card-img-top w-100" alt="Last Kingdom">
+          <div class="card-body">
+            <h5 class="card-title">Last Kingdom</h5>
+            <p class="card-text">Mientras Alfred el Grande defiende su reino de los invasores nórdicos, Uhtred busca reclamar su derecho de nacimiento ancestral.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/accion/spartacus.jpg" class="card-img-top w-100" alt="Spartacus">
+          <div class="card-body">
+            <h5 class="card-title">Spartacus</h5>
+            <p class="card-text">Un tracio es condenado a recibir una muerte brutal en la arena, pero vence a sus verdugos y renace como el gladiador esclavo Espartaco.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="adolescentes">
+      <h1 class="display-5">Adolescentes</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/adolescentes/elite.jpg" class="card-img-top w-100" alt="Elite">
+          <div class="card-body">
+            <h5 class="card-title">Elite</h5>
+            <p class="card-text">Tres jóvenes de la clase obrera asisten a una de las escuelas privadas más explusivas de España, donde el choque con los hijos de la élite acaba en una tragedia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/adolescentes/anne.jpg" class="card-img-top w-100" alt="Anne">
+          <div class="card-body">
+            <h5 class="card-title">Anne</h5>
+            <p class="card-text">Una huerfanita con una imaginación sin escalas termina por error en la casa de una solterona y su hermano. Basada en la inolvidable novela.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/adolescentes/merli.jpg" class="card-img-top w-100" alt="Merli">
+          <div class="card-body">
+            <h5 class="card-title">Merli</h5>
+            <p class="card-text">Un profesor de filosofía inusual altera tanto a padres como colegas, enamora a otros e inspira a todos sus alumnos, inluido su hijo gay.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+        <div class="card border-0 shadow h-card">
+          <img src="/assets/images/galeria/adolescentes/sex-education.jpg" class="card-img-top w-100" alt="Sex education">
+          <div class="card-body">
+            <h5 class="card-title">Sex education</h5>
+            <p class="card-text">Por tener una madre terapeuta, Otis siempre tiene una respuesta cuando de sexo se trata. Así que su rebelde amiga Maeve le propone abrir una clínica de terapia sexual.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="heroes">
+        <h1 class="display-5">Héroes</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/heroes/Daredevil.jpg" class="card-img-top w-100" alt="Daredevil">
+            <div class="card-body">
+              <h5 class="card-title">Daredevil</h5>
+              <p class="card-text">La vida de justiciero de Murdock y su nuevo estudio enfrentan desafíos igual de peligrosos en un caso de asesinato ligado al sindicato del crimen corporativo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/heroes/Falcon.jpg" class="card-img-top w-100" alt="Falcon and winter soldier">
+            <div class="card-body">
+              <h5 class="card-title">Falcon and winter soldier</h5>
+              <p class="card-text">Sam Wilson se entera de una amenaza creciente mientras lucha con problemas en casa. Bucky se esfuerza por reinsertarse en la sociedad, pero tiene pesadillas que lo muestran como un despiadado Soldado del Invierno.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/heroes/IronFist.jpg" class="card-img-top w-100" alt="Iron Fist">
+            <div class="card-body">
+              <h5 class="card-title">Iron Fist</h5>
+              <p class="card-text">Danny Rand regresa a Nueva York 15 años despues de haber sido declarado muerto. La recepción, sin embargo, está lejos ser la que esperaba.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/heroes/wandavision.jpg" class="card-img-top w-100" alt="Wanda Vision">
+            <div class="card-body">
+              <h5 class="card-title">Wanda Vision</h5>
+              <p class="card-text">Esta serie combina la comedia de situación clásica con el universo de Marvel para continuar la historia de Wanda y Vision, una pareja de superhéroes con una vida ideal que empieza a sospechar de la realidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="fantasia">
+        <h1 class="display-5">Ficción y Fantasía</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/Ficcion y Fantasia/Dark.jpg" class="card-img-top w-100" alt="Dark">
+            <div class="card-body">
+              <h5 class="card-title">Dark</h5>
+              <p class="card-text">La desaparición de un niño lleva a cuatro familias a una frenética búsqueda, mientras descubren un misterio que abarca tres generaciones.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/Ficcion y Fantasia/los100.jpg" class="card-img-top w-100" alt="Los 100">
+            <div class="card-body">
+              <h5 class="card-title">Los 100</h5>
+              <p class="card-text">Un siglo después de que la tierra fuera devastada por un holocausto nuclear, cien habitantes de una estacion espacial vuelven al planeta para determinar si es habitable.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/Ficcion y Fantasia/the_witcher.jpg" class="card-img-top w-100" alt="The Witcher">
+            <div class="card-body">
+              <h5 class="card-title">The Witcher</h5>
+              <p class="card-text">Geralt de Rivia, el legendario brujo cazador de monstruos, gravita inexorablemente hacia su destino en un mundo de tormentas y humanas tradiciones.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/Ficcion y Fantasia/umbrella.jpg" class="card-img-top w-100" alt="Umbrella academy">
+            <div class="card-body">
+              <h5 class="card-title">Umbrella academy</h5>
+              <p class="card-text">Los hermanos Hargreeves se reencuentran para el velorio del padre años después de alcanzar la fama combatiendo el crimen como un grupo de jóvenes superhéroes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="suspenso">
+        <h1 class="display-5">Suspenso</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/suspenso/thesinner.jpg" class="card-img-top w-100" alt="The sinner">
+            <div class="card-body">
+              <h5 class="card-title">The sinner</h5>
+              <p class="card-text">En un pequeño pueblo de Nueva York, un atormentado detective busca resolver crímenes escalofriantes mientras libra una batalla contra sus propios demonios.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/suspenso/blindspot.jpg" class="card-img-top w-100" alt="Blindspot">
+            <div class="card-body">
+              <h5 class="card-title">Blindspot</h5>
+              <p class="card-text">Siguiendo las pistas ocultas en los enigmáticos tatuajes de una amnésica, el agente del FBI Kurt Weller se abre paso en la investigacion de una gran conspiración.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/suspenso/you.jpg" class="card-img-top w-100" alt="You">
+            <div class="card-body">
+              <h5 class="card-title">You</h5>
+              <p class="card-text">Un joven profundamente obsesivo y peligrosamente seductor mueve cielo y tierra para instalarse en la vida de aquellas por quienes se siente cautivado.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 px-2 my-2">
+          <div class="card border-0 shadow h-card">
+            <img src="/assets/images/galeria/suspenso/elinocente.jpg" class="card-img-top w-100" alt="El inocente">
+            <div class="card-body">
+              <h5 class="card-title">El inocente</h5>
+              <p class="card-text">Un homicidio accidental lo lleva a una espiral de intriga y asesinato. En el momento en que encuentra amor y libertad, una llamada lo devuelve a la pesadilla.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+              FOOTER SECTION
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+  <footer class="text-white" style="background-color: rgba(0, 0, 0, 0.45)">
+    <div class="container text-center py-3">
+      <nav class="row align-items-center">
+        <div class="col-md">
+          <div>¡Suíguenos en nuestras redes!</div>
+          <div>
+            <a href="https://www.facebook.com/" style="text-decoration: none" target="_blank"><i
+                class="fab fa-facebook-square"></i> Facebook</a>
+          </div>
+          <div>
+            <a href="https://twitter.com/" style="text-decoration: none" target="_blank"><i
+                class="fab fa-twitter-square"></i> Twitter</a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/" style="text-decoration: none" target="_blank"><i
+                class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+        <div class="col-md d-none d-md-block">
+          <a href="/index.html"><img src="/assets/images/Logo series y pel.png" alt="logo cineastas"
+              height="50px" /></a>
+        </div>
+        <div class="col-md d-none d-lg-block">
+          <div>¡También visítanos</div>
+          <div>en nuestro canal!</div>
+          <div>Nuevo video todos los martes.</div>
+          <div>
+            <a href="https://www.youtube.com/" style="text-decoration: none" target="_blank"><i
+                class="fab fa-youtube"></i> YouTube</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

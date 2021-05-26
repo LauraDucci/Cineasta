@@ -1,0 +1,146 @@
+body {
+  background: rgb(28, 27, 51) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(28, 27, 51, 1) 0%,
+    rgba(164, 15, 15, 1) 69%,
+    rgba(128, 0, 58, 1) 100%
+  ) !important;
+}
+/********NAV BAR*******/
+/*////////////////////*/
+#navbarNavAltMarkup {
+  justify-content: flex-end !important;
+}
+
+#BOTON-NAV {
+  margin: 5px 10px 5px 10px;
+  color: white;
+}
+
+#BOTON-NAV:hover {
+  color: rgb(100, 100, 100);
+}
+
+#SUSCRIPCION {
+  display: flex;
+  text-align: justify;
+}
+
+.form-control:focus {
+  color: #222222 !important;
+  background-color: #fff !important;
+  border-color: #fe8686 !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 0.25rem rgb(253 13 13 / 25%) !important;
+}
+
+.border-danger {
+  border-color: #808080 !important;
+}
+
+/******** FOOTER *******/
+/*////////////////////*/
+footer {
+  font-size: 0.75rem !important;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: white !important;
+}
+
+footer a:hover {
+  color: red !important;
+}
+/******** CARDS *******/
+/*////////////////////*/
+.radius {
+  border-radius: 50%;
+  width: 185px;
+  height: 169px;
+}
+.img-e > img {
+  object-fit: cover;
+}
+.font-weight-bold {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.back-e {
+  background-color: rgba(14, 13, 13, 0.2);
+  /* border-radius: 8px; */
+}
+.text-e {
+  color: black;
+  font-size: 1.3rem;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+/* .text-bla {
+  color: black;
+  font-size: 1.7rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.back {
+  background-color: rgba(255, 255, 255, 0.722);
+} */
+
+#sectionrow {
+  display: flex;
+  flex-flow: column;
+  align-items: center !important;
+}
+/* @media (max-width: 650px) {
+  #h1E {
+    font-size: 1.5rem !important;
+  }
+} */
+@media (max-width: 500px) {
+  #h1E {
+    font-size: 1.1rem !important;
+  }
+}
+@media (max-width: 400px) {
+  #h1E {
+    font-size: 0.8rem !important;
+  }
+}
+/* @media (max-width: 900px) {
+  #p1E {
+    font-size: 1.6rem !important;
+  }
+} */
+@media (max-width: 810px) {
+  #p1E {
+    font-size: 1.4rem !important;
+  }
+}
+@media (max-width: 700px) {
+  #p1E {
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 610px) {
+  #p1E {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 500px) {
+  #p1E {
+    font-size: 0.7rem !important;
+  }
+}
+@media (max-width: 560px) {
+  .col {
+    width: 100% !important;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0px 0px 0px 0px !important;
+  }
+  #sectionE {
+    margin: 0px !important;
+  }
+}

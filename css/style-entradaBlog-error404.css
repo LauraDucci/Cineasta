@@ -1,0 +1,263 @@
+
+/*
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+._._._._._._._._._._._._._._._._._.
+
+        GENERAL TODA LA PAG
+
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+._._._._._._._._._._._._._._._._._.
+*/
+
+body {
+  background: rgb(28, 27, 51) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(28, 27, 51, 1) 0%,
+    rgba(164, 15, 15, 1) 69%,
+    rgba(128, 0, 58, 1) 100%
+  ) !important;
+}
+
+.form-control:focus {
+  color: #222222 !important;
+  background-color: #fff !important;
+  border-color: #fe8686 !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 0.25rem rgb(253 13 13 / 25%) !important;
+}
+
+/*
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+._._._._._._._._._._._._._._._._._.
+
+            NAVEGADOR
+
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+._._._._._._._._._._._._._._._._._.
+*/
+
+#navbarNavAltMarkup {
+  justify-content: flex-end !important;
+}
+
+#BOTON-NAV {
+  margin: 5px 10px 5px 10px;
+  color: white;
+}
+
+#BOTON-NAV:hover {
+  color: rgb(100, 100, 100);
+}
+
+#SUSCRIPCION {
+  display: flex;
+  text-align: justify;
+}
+
+/*
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+._._._._._._._._._._._._._._._._._.
+
+            MAIN
+
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+._._._._._._._._._._._._._._._._._.
+*/
+
+main {
+ height: auto;
+}
+
+.text-rating{
+  color: orange;
+}
+
+/*
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+._._._._._._._._._._._._._._._._._.
+
+            ERROR
+
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+._._._._._._._._._._._._._._._._._.
+*/
+
+#error404{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-top: 12px;
+  background: rgb(28,27,51);
+  background: linear-gradient(90deg, rgba(28,27,51,1) 0%, rgba(164,15,15,1) 69%, rgba(128,0,58,1) 100%);
+  border-radius: 1em;
+}
+
+.container-error-happy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 65px 0;
+  height: 1000px;
+  width: 100%;
+  background-image: url(/assets/images/error404/nunca.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container-error-thanos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  width: 100%;
+  margin: 73px 0;
+  background-image: url(/assets/images/error404/thanos.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container-error-spidersad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 73px 0;
+  height: 1000px;
+  width: 100%;
+  background-image: url(/assets/images/error404/spidersad.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container-error-rocky{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 73px 0;
+  height: 1000px;
+  width: 100%;
+  background-image: url(/assets/images/error404/Rocky.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container-legend{
+  width: 100%;
+  max-width: 450px;
+  padding: 1rem;
+  background-color: rgba(116, 197, 252, 0.4);
+  border-radius: 1rem;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-legend h1{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.container-legend p{
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+
+/*
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+._._._._._._._._._._._._._._._._._.
+
+            FOOTER
+
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+._._._._._._._._._._._._._._._._._.
+*/
+
+footer {
+  font-size: 0.75rem !important;
+}
+
+footer a {
+  color: white !important;
+}
+
+.rating{
+  position: relative;
+  display: flex;
+}
+
+.checked{
+  color: orange;
+}
+
+.far{
+  color: white
+}
+
+.mxwid{
+  width: 50%;
+}
+
+textarea {
+  resize: none;
+}
+
+.pointerstar{
+  cursor: pointer;
+}
+
+.pointerstar a{
+  color: gray;
+  transition: 0.3s all;
+  text-decoration: none;
+}
+
+.pointerstar a:hover{
+  color: orange;
+}
+
+.b1:hover ~ a{
+  color: orange;
+}
+
+.b2:hover ~ a{
+  color: orange;
+}
+
+.b3:hover ~ a{
+  color: orange;
+}
+
+.b4:hover ~ a{
+  color: orange;
+}
+
+.b5:hover ~ a{
+  color: orange;
+}
+
+.pointerstar{
+  direction: rtl;
+}
+
+@media (max-width: 720px){
+  p{
+    font-size: 0.8em; 
+}
+  h1{
+    font: 1em;
+  }
+  .rating{
+    margin-bottom: 5px;
+  }
+  .rating span{
+    font-size: 1.5rem;
+  }
+}
