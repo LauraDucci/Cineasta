@@ -82,67 +82,52 @@ main {
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 ._._._._._._._._._._._._._._._._._.
 */
-
+main {
+  min-height: calc(100vh - 104px);
+  position: relative;
+  /* top: 40.5px */
+}
 #error404{
   display: flex;
   justify-content: center;
-  height: 100%;
-  margin-top: 12px;
+  /* height: 100%; */
+  /* margin-top: 12px; */
   background: rgb(28,27,51);
   background: linear-gradient(90deg, rgba(28,27,51,1) 0%, rgba(164,15,15,1) 69%, rgba(128,0,58,1) 100%);
   border-radius: 1em;
 }
-
-.container-error-happy{
+.container-error {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 65px 0;
-  height: 1000px;
-  width: 100%;
-  background-image: url(/assets/images/error404/nunca.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.container-error-happy{
+  /* margin: 65px 0; */
+  width: 100%;
+  background-image: url(/assets/images/error404/nunca.jpg);
+ 
 }
 
 .container-error-thanos{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 1000px;
   width: 100%;
-  margin: 73px 0;
+  /* margin: 73px 0; */
   background-image: url(/assets/images/error404/thanos.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+ 
 }
 
 .container-error-spidersad{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 73px 0;
-  height: 1000px;
+  /* margin: 73px 0; */
   width: 100%;
   background-image: url(/assets/images/error404/spidersad.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .container-error-rocky{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 73px 0;
-  height: 1000px;
+  /* margin: 73px 0; */
   width: 100%;
   background-image: url(/assets/images/error404/Rocky.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .container-legend{
@@ -169,6 +154,11 @@ main {
   margin: 5px;
 }
 
+.carousel-inner img {
+  object-fit: cover;
+  object-position: top center;
+
+}
 
 /*
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
