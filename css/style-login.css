@@ -14,9 +14,6 @@
   background: var(--dark-x) !important;
 }
 
-/********* NAV BAR *********/
-/**********FOOTER*************/
-
 body {
   background: rgb(28, 27, 51) !important;
   background: linear-gradient(
@@ -26,17 +23,51 @@ body {
     rgba(128, 0, 58, 1) 100%
   ) !important;
 }
+
+/********* NAV BAR *********/
+
 #navbarNavAltMarkup {
   justify-content: flex-end !important;
 }
 
-#BOTON-NAV {
+.BOTON-NAV {
   margin: 5px 10px 5px 10px;
-  color: white;
 }
 
-#BOTON-NAV:hover {
-  color: rgb(100, 100, 100);
+#SUSCRIPCION {
+  display: flex;
+  text-align: justify;
+}
+
+/* Estilo del dropdown de reseñas */
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #fd0d0d !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color:rgb(34, 34, 34) !important;
+}
+
+/**********FOOTER*************/
+
+main {
+  min-height: calc(100vh - 104px);
+}
+
+footer {
+  font-size: 0.75rem !important;
+  /* position: absolute;
+  bottom: 0;
+  width: 100%; */
+}
+
+footer a {
+  color: white !important;
+}
+
+footer a:hover {
+  color: red !important;
 }
 
 /*////SUSCRIBIRSE-MODAL////*/
@@ -75,21 +106,6 @@ body {
   box-shadow: 0 0 0 0.25rem rgb(253 13 13 / 25%) !important;
 }
 
-footer {
-  font-size: 0.75rem !important;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-footer a {
-  color: white !important;
-}
-
-footer a:hover {
-  color: red !important;
-}
-
 /*********LOGIN*********/
 /**********************/
 
@@ -103,18 +119,22 @@ footer a:hover {
   background-position: 100% 75%;
   background-repeat: no-repeat;
 }
-.form,
+
+/* .form,
 button {
   min-height: 2.8rem;
   line-height: initial;
-}
+} */
+
 .form-control2 {
   min-height: 2rem;
   width: 63%;
 }
+
 /* .font-weight-bold {
     font-weight: bold !important;
 } */
+
 .h1 {
   font-size: 2rem;
 }

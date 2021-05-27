@@ -32,8 +32,15 @@
     <title>Inicia Sesión - CINEASTA</title>
   </head>
   <body>
-    <!--------- NAV BAR --------->
-    <!------------>
+
+    <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+                NAVBAR SECTION
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
     <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top"
       style="background-color: rgba(0, 0, 0, 0.45)"
@@ -58,32 +65,65 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
+            <div class="dropdown BOTON-NAV">
+              <a
+                type="button"
+                class="btn btn-outline-light w-100"
+                href="#"
+                id=""
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Reseñas
+              </a>
+
+              <ul
+                class="dropdown-menu"
+                style="background-color: rgba(0, 0, 0, 0.85)"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item text-light" href="/pages/galeria.html"
+                    >Películas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="/pages/galeria2.html"
+                    >Series</a
+                  >
+                </li>
+              </ul>
+            </div>
+
             <button
-              id="BOTON-NAV"
+              id=""
               type="button"
-              class="nav-link btn btn-outline-light"
+              class="btn btn-outline-light BOTON-NAV"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
               Suscríbete
             </button>
+
             <a
-              id="BOTON-NAV"
-              class="nav-link btn btn-outline-light"
+              id=""
+              class="btn btn-outline-light BOTON-NAV"
               aria-current="page"
               href="/pages/acerca-de-nosotros.html"
               >Conócenos</a
             >
             <a
-              id="BOTON-NAV"
-              class="nav-link btn btn-outline-light"
+              id=""
+              class="btn btn-outline-light BOTON-NAV"
               aria-current="page"
               href="/pages/contacto.html"
               >Contáctanos</a
             >
             <a
-              id="BOTON-NAV"
-              class="nav-link btn btn-outline-light"
+              id=""
+              class="btn btn-outline-light BOTON-NAV"
               aria-current="page"
               href="/pages/login.html"
               >Inicia sesión</a
@@ -92,14 +132,21 @@
         </div>
       </div>
     </nav>
+
+    <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+          VENTANA MODAL SUSCRIPCION
+      TAMBIEN EN EL NAVBAR, NO SEPARAR!!
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
     <div
-      class="modal fade w-100"
+      class="modal fade"
       id="exampleModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <!--------- SUSCRIBIRSE-MODAL ----------->
       <div class="modal-dialog">
         <div
           class="modal-content text-light border-dark"
@@ -124,7 +171,7 @@
                 >
                 <input
                   type="email"
-                  class="form-control bg-gray btn-danger border-0 text-dark"
+                  class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="nombre@ejemplo.com.ar"
@@ -137,7 +184,7 @@
           </div>
           <div class="modal-footer">
             <button
-              id="BOTON-NAV-modalcerrar"
+              id="BOTON-NAV"
               type="button"
               class="btn btn-outline-light"
               data-bs-dismiss="modal"
@@ -146,7 +193,7 @@
             </button>
 
             <a
-              id="BOTON-NAV-modal"
+              id="BOTON-NAV"
               class="btn btn-outline-light"
               aria-current="page"
               href="/pages/error404-1.html"
@@ -155,10 +202,17 @@
           </div>
         </div>
       </div>
-      <!-----------SUSCRIBIRSE-MODAL------------->
     </div>
-    <!--------- NAV BAR --------->
-    <!------------->
+
+    <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+              MAIN SECTION
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+    <main>
 
     <div class="container">
       <br /><br /><br /><br />
@@ -189,7 +243,7 @@
                   <input
                     type="email"
                     class="form form-control btn-secondary bg-dark-x border-0"
-                    placeholder="Ingresa tu Email"
+                    placeholder="nombre@ejemplo.com.ar"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
                   />
@@ -322,6 +376,9 @@
         </div>
       </section>
     </div>
+
+    </main>
+
 
     <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
     ._._._._._._._._._._._._._._._._._._._.

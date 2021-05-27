@@ -55,6 +55,10 @@ body {
   background-color: #fd0d0d !important;
 }
 
+.dropdown-item:focus, .dropdown-item:hover {
+  color:rgb(34, 34, 34) !important;
+}
+
 /*
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 ._._._._._._._._._._._._._._._._._.
@@ -83,7 +87,7 @@ main {
 ._._._._._._._._._._._._._._._._._.
 */
 main {
-  min-height: calc(100vh - 104px);
+  min-height: calc(100vh - 160px);
   position: relative;
   /* top: 40.5px */
 }
@@ -108,50 +112,56 @@ main {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  /* background-position-y: 70px; */
 }
 .container-error-happy {
   /* margin: 65px 0; */
   width: 100%;
-  background-image: url(/assets/images/error404/nunca.jpg);
+  background-image: url(/assets/images/error404/3.png);
 }
 
 .container-error-thanos {
   width: 100%;
   /* margin: 73px 0; */
-  background-image: url(/assets/images/error404/thanos.png);
+  background-image: url(/assets/images/error404/1.png);
 }
 
 .container-error-spidersad {
   /* margin: 73px 0; */
   width: 100%;
-  background-image: url(/assets/images/error404/spidersad.jpg);
+  background-image: url(/assets/images/error404/2.png);
 }
 
 .container-error-rocky {
   /* margin: 73px 0; */
   width: 100%;
-  background-image: url(/assets/images/error404/Rocky.jpg);
+  background-image: url(/assets/images/error404/4.png);
 }
 
 .container-legend {
   width: 100%;
   max-width: 450px;
   padding: 1rem;
-  background-color: rgba(116, 197, 252, 0.4);
+  background: linear-gradient(
+    90deg,
+    rgba(28, 27, 51, 0.8) 0%,
+    rgba(164, 15, 15, 0.8) 69%,
+    rgba(128, 0, 58, 0.8) 100%
+  );
   border-radius: 1rem;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .container-legend h1 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   justify-content: center;
   margin: 5px;
 }
 
 .container-legend p {
-  font-weight: bold;
-  color: rgb(0, 0, 0);
+  /* font-weight: bold; */
+  color: rgb(255, 255, 255);
   text-align: center;
   justify-content: center;
   margin: 5px;

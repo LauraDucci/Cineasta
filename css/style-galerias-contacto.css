@@ -40,18 +40,23 @@ body {
   justify-content: flex-end !important;
 }
 
-#BOTON-NAV {
+.BOTON-NAV {
   margin: 5px 10px 5px 10px;
-  color: white;
-}
-
-#BOTON-NAV:hover {
-  color: rgb(100, 100, 100);
 }
 
 #SUSCRIPCION {
   display: flex;
   text-align: justify;
+}
+
+/* Estilo del dropdown de reseñas */
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #fd0d0d !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color:rgb(34, 34, 34) !important;
 }
 
 /*
@@ -63,6 +68,11 @@ body {
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 ._._._._._._._._._._._._._._._._._.
 */
+
+.btn-group-sm>.btn+.dropdown-toggle-split, .btn-sm+.dropdown-toggle-split {
+  padding-right: .5625rem !important;
+  padding-left: .5625rem !important;
+}
 
 .dropdown-margin{
   margin-top: 80px;
@@ -86,9 +96,6 @@ h1{
   /* height: 250px; */
   /* object-fit: cover; */
 }
-/* .h-card img {
-  height: ;
-} */
 
 /*
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
@@ -133,6 +140,7 @@ h1{
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 ._._._._._._._._._._._._._._._._._.
 */
+
 main {
   min-height: calc(100vh - 104px);
 }
@@ -142,7 +150,6 @@ footer {
   /* position: absolute;
   bottom: 0;
   width: 100%; */
-
 }
 
 footer a {

@@ -19,7 +19,7 @@ body {
 }
 
 .form-control:focus {
-  color: #222222 !important;
+  color: rgb(34, 34, 34) !important;
   background-color: #fff !important;
   border-color: #fe8686 !important;
   outline: 0 !important;
@@ -53,6 +53,10 @@ body {
 .dropdown-item.active,
 .dropdown-item:active {
   background-color: #fd0d0d !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+color:rgb(34, 34, 34) !important;
 }
 
 /*
