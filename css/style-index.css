@@ -206,12 +206,6 @@ color:rgb(34, 34, 34) !important;
 .asideIndex {
   top: 64px;
 }
-/* 
-@media (max-width: 767px) {
-  #carouselPublicidadIndex {
-    display: none;
-  }
-} */
 
 .accordion-button:focus {
   z-index: 3 !important;
