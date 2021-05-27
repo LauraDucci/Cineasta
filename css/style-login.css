@@ -149,7 +149,7 @@ button {
   color: rgba(164, 15, 15, 1);
 }
 .modal {
-  width: 450px;
+  /* width: 450px; */
   justify-content: center;
 }
 .modalE {
