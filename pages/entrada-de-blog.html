@@ -20,6 +20,7 @@
   </head>
 
   <body>
+    
     <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
     ._._._._._._._._._._._._._._._._._._._.
      
@@ -27,8 +28,6 @@
      
     .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
     ._._._._._._._._._._._._._._._._._. -->
-
-    <!-- <div id="INICIO"></div> -->
 
     <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top"
@@ -54,32 +53,65 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
+            <div class="dropdown BOTON-NAV">
+              <a
+                type="button"
+                class="btn btn-outline-light w-100"
+                href="#"
+                id=""
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Reseñas
+              </a>
+
+              <ul
+                class="dropdown-menu"
+                style="background-color: rgba(0, 0, 0, 0.85)"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item text-light" href="/pages/galeria.html"
+                    >Películas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="/pages/galeria2.html"
+                    >Series</a
+                  >
+                </li>
+              </ul>
+            </div>
+
             <button
-              id="BOTON-NAV"
+              id=""
               type="button"
-              class="nav-link btn btn-outline-light"
+              class="btn btn-outline-light BOTON-NAV"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
               Suscríbete
             </button>
+
             <a
-              id="BOTON-NAV"
-              class="nav-link btn btn-outline-light"
+              id=""
+              class="btn btn-outline-light BOTON-NAV"
               aria-current="page"
               href="/pages/acerca-de-nosotros.html"
               >Conócenos</a
             >
             <a
-              id="BOTON-NAV"
-              class="nav-link btn btn-outline-light"
+              id=""
+              class="btn btn-outline-light BOTON-NAV"
               aria-current="page"
               href="/pages/contacto.html"
               >Contáctanos</a
             >
             <a
-              id="BOTON-NAV"
-              class="nav-link btn btn-outline-light"
+              id=""
+              class="btn btn-outline-light BOTON-NAV"
               aria-current="page"
               href="/pages/login.html"
               >Inicia sesión</a
@@ -91,10 +123,8 @@
 
     <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
     ._._._._._._._._._._._._._._._._._._._.
-     
           VENTANA MODAL SUSCRIPCION
       TAMBIEN EN EL NAVBAR, NO SEPARAR!!
-     
     .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
     ._._._._._._._._._._._._._._._._._. -->
 
@@ -154,13 +184,21 @@
               id="BOTON-NAV"
               class="btn btn-outline-light"
               aria-current="page"
-              href="/pages/error404.html"
+              href="/pages/error404-1.html"
               >Suscribirme</a
             >
           </div>
         </div>
       </div>
     </div>
+
+    <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+
+              MAIN SECTION
+
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
 
     <main>
       <section id="posteo my-5">
@@ -256,78 +294,53 @@
               >
             </div>
             <h1 class="text-center text-light shadow p-3 mb-5 rounded">
-              CRÍTICAS DE USUARIOS
+              CRITICAS DE CINEASTAS
             </h1>
-            <div class="container d-flex mb-3">
-              <h3 class="text-light me-3">Ordenar por:</h3>
-              <div class="dropdown">
-                <a
-                  class="btn btn-secondary dropdown-toggle"
-                  href="/pages/error404-4.html"
-                  role="button"
-                  id="dropdownMenuLink"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Mejores Críticas
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li>
-                    <a class="dropdown-item" href="/pages/error404-1.html"
-                      >Usuarios que han publicado más críticas</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/pages/error404-2.html"
-                      >Usuarios con más seguidores</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
 
-            <div class="container d-flex justify-content-center">
-              <div class="row">
-                <div class="col-4 align-items-center">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a
-                          class="page-link text-dark"
-                          href="/pages/error404-3.html"
-                          >Previous</a
-                        >
-                      </li>
-                      <li class="page-item">
-                        <a
-                          class="page-link text-dark"
-                          href="/pages/error404-3.html"
-                          >1</a
-                        >
-                      </li>
-                      <li class="page-item">
-                        <a
-                          class="page-link text-dark"
-                          href="/pages/error404-3.html"
-                          >2</a
-                        >
-                      </li>
-                      <li class="page-item">
-                        <a
-                          class="page-link text-dark"
-                          href="/pages/error404-3.html"
-                          >3</a
-                        >
-                      </li>
-                      <li class="page-item">
-                        <a
-                          class="page-link text-dark"
-                          href="/pages/error404-3.html"
-                          >Next</a
-                        >
-                      </li>
-                    </ul>
-                  </nav>
+            <div class="container-lg d-block">
+              <div class="container-lg">
+                <div class="mb-3">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label text-light my-2"
+                    >No estás registrado, pero aún así puedes aportar tu
+                    comentario!</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Nombre y Apellido"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="exampleFormControlTextarea1"
+                    class="form-label text-light"
+                    >Crítica</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="Qué opinas?"
+                  ></textarea>
+                </div>
+                <div class="container p-0 pointerstar">
+                  <a class="fas fa-star fa-2x b1"></a>
+                  <a class="fas fa-star fa-2x b2"></a>
+                  <a class="fas fa-star fa-2x b3"></a>
+                  <a class="fas fa-star fa-2x b4"></a>
+                  <a class="fas fa-star fa-2x b5"></a>
+                </div>
+                <div class="col-auto mt-3 d-flex justify-content-end">
+                  <a
+                    href="/pages/error404-1.html"
+                    type="botton"
+                    class="btn btn-outline-light mb-3 px-5"
+                  >
+                    Enviar
+                  </a>
                 </div>
               </div>
             </div>
@@ -535,49 +548,83 @@
                 </div>
               </div>
             </div>
-            <div class="container-lg d-block">
-              <div class="container-lg">
-                <div class="mb-3">
-                  <label
-                    for="exampleFormControlInput1"
-                    class="form-label text-light my-2"
-                    >No estás registrado, pero aún así puedes aportar tu
-                    comentario!</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Nombre y Apellido"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label
-                    for="exampleFormControlTextarea1"
-                    class="form-label text-light"
-                    >Crítica</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                    placeholder="Qué opinas?"
-                  ></textarea>
-                </div>
-                <div class="container p-0 pointerstar">
-                  <a class="fas fa-star fa-2x b1"></a>
-                  <a class="fas fa-star fa-2x b2"></a>
-                  <a class="fas fa-star fa-2x b3"></a>
-                  <a class="fas fa-star fa-2x b4"></a>
-                  <a class="fas fa-star fa-2x b5"></a>
-                </div>
-                <div class="col-auto mt-3 d-flex justify-content-end">
-                  <button type="submit" class="btn btn-outline-light mb-3 px-5">
-                    Enviar
-                  </button>
+
+            <div class="container d-flex mb-3">
+              <h3 class="text-light me-3">Ordenar comentarios por:</h3>
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle"
+                  href="/pages/error404-4.html"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Mejores Críticas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="/pages/error404-1.html"
+                      >Usuarios que han publicado más críticas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/error404-2.html"
+                      >Usuarios con más seguidores</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+              <div class="row">
+                <div class="col-4 align-items-center">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a
+                          class="page-link text-dark"
+                          href="/pages/error404-3.html"
+                          >Anterior</a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link text-dark"
+                          href="/pages/error404-3.html"
+                          >1</a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link text-dark"
+                          href="/pages/error404-3.html"
+                          >2</a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link text-dark"
+                          href="/pages/error404-3.html"
+                          >3</a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link text-dark"
+                          href="/pages/error404-3.html"
+                          >Siguiente</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
             </div>
+
+            <br /><br /><br /><br />
+
             <div class="container-lg">
               <div class="row mb-3">
                 <div class="col-md-6 col-sm-12">

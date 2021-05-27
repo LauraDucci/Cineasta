@@ -40,13 +40,19 @@ body {
   justify-content: flex-end !important;
 }
 
-#BOTON-NAV {
+.BOTON-NAV {
   margin: 5px 10px 5px 10px;
 }
 
 #SUSCRIPCION {
   display: flex;
   text-align: justify;
+}
+
+/* Estilo del dropdown de reseñas */
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #fd0d0d !important;
 }
 
 /*
@@ -59,11 +65,10 @@ body {
 ._._._._._._._._._._._._._._._._._.
 */
 
-
 .carousel-caption {
-  text-shadow: -1px -1px 4px rgba(0, 0, 0, 0.4), -1px 1px 4px rgba(0, 0, 0, 0.4), 1px 1px 4px rgba(0, 0, 0, 0.4), 1px -1px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: -1px -1px 4px rgba(0, 0, 0, 0.4), -1px 1px 4px rgba(0, 0, 0, 0.4),
+    1px 1px 4px rgba(0, 0, 0, 0.4), 1px -1px 4px rgba(0, 0, 0, 0.4);
 }
-
 
 /*
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
@@ -231,7 +236,6 @@ body {
 .categoriaIndex:hover {
   color: red;
 }
-
 
 /*
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.

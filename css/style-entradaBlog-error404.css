@@ -1,4 +1,3 @@
-
 /*
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 ._._._._._._._._._._._._._._._._._.
@@ -41,18 +40,19 @@ body {
   justify-content: flex-end !important;
 }
 
-#BOTON-NAV {
+.BOTON-NAV {
   margin: 5px 10px 5px 10px;
-  color: white;
-}
-
-#BOTON-NAV:hover {
-  color: rgb(100, 100, 100);
 }
 
 #SUSCRIPCION {
   display: flex;
   text-align: justify;
+}
+
+/* Estilo del dropdown de reseñas */
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #fd0d0d !important;
 }
 
 /*
@@ -66,10 +66,10 @@ body {
 */
 
 main {
- height: auto;
+  height: auto;
 }
 
-.text-rating{
+.text-rating {
   color: orange;
 }
 
@@ -87,13 +87,18 @@ main {
   position: relative;
   /* top: 40.5px */
 }
-#error404{
+#error404 {
   display: flex;
   justify-content: center;
   /* height: 100%; */
   /* margin-top: 12px; */
-  background: rgb(28,27,51);
-  background: linear-gradient(90deg, rgba(28,27,51,1) 0%, rgba(164,15,15,1) 69%, rgba(128,0,58,1) 100%);
+  background: rgb(28, 27, 51);
+  background: linear-gradient(
+    90deg,
+    rgba(28, 27, 51, 1) 0%,
+    rgba(164, 15, 15, 1) 69%,
+    rgba(128, 0, 58, 1) 100%
+  );
   border-radius: 1em;
 }
 .container-error {
@@ -104,33 +109,31 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.container-error-happy{
+.container-error-happy {
   /* margin: 65px 0; */
   width: 100%;
   background-image: url(/assets/images/error404/nunca.jpg);
- 
 }
 
-.container-error-thanos{
+.container-error-thanos {
   width: 100%;
   /* margin: 73px 0; */
   background-image: url(/assets/images/error404/thanos.png);
- 
 }
 
-.container-error-spidersad{
+.container-error-spidersad {
   /* margin: 73px 0; */
   width: 100%;
   background-image: url(/assets/images/error404/spidersad.jpg);
 }
 
-.container-error-rocky{
+.container-error-rocky {
   /* margin: 73px 0; */
   width: 100%;
   background-image: url(/assets/images/error404/Rocky.jpg);
 }
 
-.container-legend{
+.container-legend {
   width: 100%;
   max-width: 450px;
   padding: 1rem;
@@ -139,14 +142,14 @@ main {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
-.container-legend h1{
+.container-legend h1 {
   color: rgb(0, 0, 0);
   text-align: center;
   justify-content: center;
   margin: 5px;
 }
 
-.container-legend p{
+.container-legend p {
   font-weight: bold;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -157,7 +160,6 @@ main {
 .carousel-inner img {
   object-fit: cover;
   object-position: top center;
-
 }
 
 /*
@@ -178,20 +180,28 @@ footer a {
   color: white !important;
 }
 
-.rating{
+footer a:hover {
+  color: red !important;
+}
+
+
+
+
+
+.rating {
   position: relative;
   display: flex;
 }
 
-.checked{
+.checked {
   color: orange;
 }
 
-.far{
-  color: white
+.far {
+  color: white;
 }
 
-.mxwid{
+.mxwid {
   width: 50%;
 }
 
@@ -199,55 +209,55 @@ textarea {
   resize: none;
 }
 
-.pointerstar{
+.pointerstar {
   cursor: pointer;
 }
 
-.pointerstar a{
+.pointerstar a {
   color: gray;
   transition: 0.3s all;
   text-decoration: none;
 }
 
-.pointerstar a:hover{
+.pointerstar a:hover {
   color: orange;
 }
 
-.b1:hover ~ a{
+.b1:hover ~ a {
   color: orange;
 }
 
-.b2:hover ~ a{
+.b2:hover ~ a {
   color: orange;
 }
 
-.b3:hover ~ a{
+.b3:hover ~ a {
   color: orange;
 }
 
-.b4:hover ~ a{
+.b4:hover ~ a {
   color: orange;
 }
 
-.b5:hover ~ a{
+.b5:hover ~ a {
   color: orange;
 }
 
-.pointerstar{
+.pointerstar {
   direction: rtl;
 }
 
-@media (max-width: 720px){
-  p{
-    font-size: 0.8em; 
-}
-  h1{
+@media (max-width: 720px) {
+  p {
+    font-size: 0.8em;
+  }
+  h1 {
     font: 1em;
   }
-  .rating{
+  .rating {
     margin-bottom: 5px;
   }
-  .rating span{
+  .rating span {
     font-size: 1.5rem;
   }
 }
